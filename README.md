@@ -27,7 +27,7 @@ No backend needed - everything runs in the browser with mock data. Perfect for d
 
 ```bash
 # Clone this bad boy
-git clone https://github.com/yourusername/priority-ai.git
+git clone https://github.com/anusharao-7/priority-ai.git
 cd priority-ai
 
 # Install the goods
