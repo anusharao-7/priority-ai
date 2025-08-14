@@ -5,7 +5,8 @@ import {
   Grid3X3, 
   MessageCircle, 
   BarChart3,
-  Zap
+  Zap,
+  Brain
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -17,6 +18,7 @@ const menuItems = [
   { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { id: 'features', label: 'Features', icon: List },
   { id: 'prioritization', label: 'Prioritization', icon: Grid3X3 },
+  { id: 'smart-prioritization', label: 'Smart Priority', icon: Brain },
   { id: 'feedback', label: 'Feedback', icon: MessageCircle },
   { id: 'analytics', label: 'Analytics', icon: BarChart3 }
 ];
