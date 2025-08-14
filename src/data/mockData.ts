@@ -140,20 +140,55 @@ export const mockFeedback: Feedback[] = [
 ];
 
 export const mockUsageData: UsageData[] = [
-  { featureId: '1', date: '2024-01-20', count: 45 },
-  { featureId: '1', date: '2024-01-21', count: 52 },
-  { featureId: '1', date: '2024-01-22', count: 48 },
-  { featureId: '1', date: '2024-01-23', count: 61 },
-  { featureId: '1', date: '2024-01-24', count: 58 },
-  { featureId: '1', date: '2024-01-25', count: 67 },
-  { featureId: '1', date: '2024-01-26', count: 73 },
-  { featureId: '2', date: '2024-01-20', count: 28 },
-  { featureId: '2', date: '2024-01-21', count: 32 },
-  { featureId: '2', date: '2024-01-22', count: 35 },
-  { featureId: '2', date: '2024-01-23', count: 41 },
-  { featureId: '2', date: '2024-01-24', count: 38 },
-  { featureId: '2', date: '2024-01-25', count: 44 },
-  { featureId: '2', date: '2024-01-26', count: 49 }
+  // Smart Search - Growing trend
+  { featureId: '1', date: '2024-01-15', count: 35 },
+  { featureId: '1', date: '2024-01-16', count: 42 },
+  { featureId: '1', date: '2024-01-17', count: 38 },
+  { featureId: '1', date: '2024-01-18', count: 45 },
+  { featureId: '1', date: '2024-01-19', count: 52 },
+  { featureId: '1', date: '2024-01-20', count: 48 },
+  { featureId: '1', date: '2024-01-21', count: 61 },
+  { featureId: '1', date: '2024-01-22', count: 58 },
+  { featureId: '1', date: '2024-01-23', count: 67 },
+  { featureId: '1', date: '2024-01-24', count: 73 },
+  { featureId: '1', date: '2024-01-25', count: 80 },
+  
+  // Real-time Chat - Steady growth
+  { featureId: '2', date: '2024-01-15', count: 20 },
+  { featureId: '2', date: '2024-01-16', count: 25 },
+  { featureId: '2', date: '2024-01-17', count: 28 },
+  { featureId: '2', date: '2024-01-18', count: 32 },
+  { featureId: '2', date: '2024-01-19', count: 35 },
+  { featureId: '2', date: '2024-01-20', count: 38 },
+  { featureId: '2', date: '2024-01-21', count: 41 },
+  { featureId: '2', date: '2024-01-22', count: 44 },
+  { featureId: '2', date: '2024-01-23', count: 45 },
+  
+  // Team Collaboration - Rapid growth
+  { featureId: '3', date: '2024-01-15', count: 8 },
+  { featureId: '3', date: '2024-01-16', count: 12 },
+  { featureId: '3', date: '2024-01-17', count: 15 },
+  { featureId: '3', date: '2024-01-18', count: 18 },
+  { featureId: '3', date: '2024-01-19', count: 22 },
+  { featureId: '3', date: '2024-01-20', count: 25 },
+  
+  // Dark Mode - Declining trend
+  { featureId: '4', date: '2024-01-15', count: 25 },
+  { featureId: '4', date: '2024-01-16', count: 22 },
+  { featureId: '4', date: '2024-01-17', count: 20 },
+  { featureId: '4', date: '2024-01-18', count: 18 },
+  { featureId: '4', date: '2024-01-19', count: 15 },
+  { featureId: '4', date: '2024-01-20', count: 15 },
+  
+  // Mobile App - No usage yet (new feature)
+  { featureId: '5', date: '2024-01-20', count: 0 },
+  { featureId: '5', date: '2024-01-21', count: 0 },
+  
+  // Advanced Analytics - Low but growing
+  { featureId: '6', date: '2024-01-20', count: 2 },
+  { featureId: '6', date: '2024-01-21', count: 3 },
+  { featureId: '6', date: '2024-01-22', count: 5 },
+  { featureId: '6', date: '2024-01-23', count: 8 }
 ];
 
 export const mockActivity: ActivityItem[] = [
