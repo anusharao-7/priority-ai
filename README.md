@@ -6,12 +6,14 @@ A smart feature prioritization tool I built to help teams (and myself) figure ou
 
 ## What does it do? 🤔
 
-- **Dashboard**: See all your features and metrics at a glance
-- **Feature Management**: Add, edit, delete features (basic CRUD stuff)
+- **Dashboard**: See all your features and metrics at a glance with activity feed
+- **Feature Management**: Add, edit, delete features with filtering and sorting
 - **Priority Matrix**: Drag features around a 2x2 matrix (Impact vs Effort) - satisfying AF
-- **Feedback System**: People can leave feedback and it tells you if they're happy or mad
-- **Analytics**: Charts and graphs because data is beautiful
-- **Sentiment Analysis**: Built my own simple sentiment analyzer (it's not GPT but it works!)
+- **Smart Prioritization**: AI-powered algorithm that combines sentiment + usage + impact data
+- **Feedback System**: People can leave feedback and get real-time sentiment analysis
+- **Analytics**: Usage trends, sentiment tracking, and performance metrics
+- **Sentiment Analysis**: Built my own keyword-based analyzer (surprisingly effective!)
+- **Usage Tracking**: Monitor feature adoption and growth trends
 
 ## Tech Stack 💻
 
@@ -27,7 +29,7 @@ No backend needed - everything runs in the browser with mock data. Perfect for d
 
 ```bash
 # Clone this bad boy
-git clone https://github.com/anusharao-7/priority-ai.git
+git clone https://github.com/yourusername/priority-ai.git
 cd priority-ai
 
 # Install the goods
@@ -73,11 +75,13 @@ src/
 
 ## Features I'm Proud Of 😎
 
-- **Drag & Drop**: Spent way too much time making this smooth
-- **Sentiment Analysis**: Built from scratch with keyword matching
-- **Responsive Design**: Works on your phone (probably)
-- **Clean Code**: TypeScript + proper component structure
-- **No Backend**: Everything runs client-side
+- **Smart Algorithm**: Combines 6 different metrics (impact, effort, sentiment, usage, trends, urgency)
+- **Drag & Drop**: Spent way too much time making this smooth but it's worth it
+- **Real-time Sentiment**: Analyzes feedback instantly with custom algorithm
+- **Usage Analytics**: Tracks trends and growth patterns
+- **Responsive Design**: Works on your phone (tested it myself)
+- **Clean Code**: TypeScript + proper component structure + good separation of concerns
+- **No Backend**: Everything runs client-side with smart mock data
 
 ## Known Issues 🐛
 
@@ -87,13 +91,14 @@ src/
 
 ## Future Ideas 💡
 
-- [ ] Add local storage so data doesn't disappear
-- [ ] Better sentiment analysis (maybe integrate a real API)
-- [ ] Export features to CSV
-- [ ] Dark mode (because why not)
-- [ ] Real backend with database
-- [ ] User authentication
-- [ ] Team collaboration features
+- [ ] **Data Persistence**: Local storage or real database integration
+- [ ] **Advanced ML**: Better sentiment analysis with actual ML models
+- [ ] **Export Features**: CSV/PDF reports for stakeholders
+- [ ] **Dark Mode**: Because every app needs it these days
+- [ ] **Real Backend**: PostgreSQL + proper API
+- [ ] **Team Features**: User roles, comments, notifications
+- [ ] **Integrations**: Jira, GitHub, Slack webhooks
+- [ ] **Mobile App**: React Native version
 
 ## Why I Built This 🤷‍♂️
 
