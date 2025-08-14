@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { Dashboard } from './pages/Dashboard';
 import { Features } from './pages/Features';
 import { Prioritization } from './pages/Prioritization';
+import { SmartPrioritization } from './pages/SmartPrioritization';
 import { FeedbackPage } from './pages/Feedback';
 import { Analytics } from './pages/Analytics';
 import { useFeatureData } from './hooks/useFeatureData';
@@ -45,6 +46,13 @@ function App() {
             onDeleteFeature={deleteFeature}
           />
         );
+      case 'smart-prioritization':
+        return (
+          <SmartPrioritization
+            features={features}
+            usageData={usageData}
+          />
+        );
       case 'feedback':
         return (
           <FeedbackPage
@@ -72,6 +80,7 @@ function App() {
       dashboard: { title: 'Dashboard', subtitle: 'Overview of your feature prioritization progress' },
       features: { title: 'Features', subtitle: 'Manage and track all your product features' },
       prioritization: { title: 'Prioritization', subtitle: 'Interactive priority matrix for strategic planning' },
+      'smart-prioritization': { title: 'Smart Prioritization', subtitle: 'AI-powered prioritization using sentiment and usage analytics' },
       feedback: { title: 'Feedback', subtitle: 'Collect and analyze user feedback with sentiment analysis' },
       analytics: { title: 'Analytics', subtitle: 'Usage insights and performance metrics' }
     };
