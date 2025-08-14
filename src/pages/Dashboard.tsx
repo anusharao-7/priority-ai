@@ -1,6 +1,6 @@
 import React from 'react';
 import { DashboardMetrics } from '../types';
-import { LayoutDashboard, Play, TrendingUp, Users } from 'lucide-react';
+import { LayoutDashboard, Play, TrendingUp, Users, Brain, Zap } from 'lucide-react';
 
 interface DashboardProps {
   metrics: DashboardMetrics;
@@ -79,7 +79,7 @@ export function Dashboard({ metrics }: DashboardProps) {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
         {/* Priority Distribution */}
         <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
           <h2 className="text-lg font-semibold text-gray-900 mb-4">Priority Distribution</h2>
@@ -121,6 +121,48 @@ export function Dashboard({ metrics }: DashboardProps) {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Quick Actions */}
+      <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
+        <h2 className="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 cursor-pointer transition-colors">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                <Brain className="w-5 h-5 text-blue-600" />
+              </div>
+              <div>
+                <h3 className="font-medium text-gray-900">Smart Prioritization</h3>
+                <p className="text-sm text-gray-600">AI-powered feature ranking</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 cursor-pointer transition-colors">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                <Zap className="w-5 h-5 text-green-600" />
+              </div>
+              <div>
+                <h3 className="font-medium text-gray-900">Quick Wins</h3>
+                <p className="text-sm text-gray-600">High impact, low effort features</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 cursor-pointer transition-colors">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                <TrendingUp className="w-5 h-5 text-purple-600" />
+              </div>
+              <div>
+                <h3 className="font-medium text-gray-900">Usage Analytics</h3>
+                <p className="text-sm text-gray-600">Track feature performance</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
