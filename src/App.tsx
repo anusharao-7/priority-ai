@@ -95,6 +95,7 @@ function App() {
           title={getPageInfo().title}
           subtitle={getPageInfo().subtitle}
           onAddFeature={addFeature}
+          features={features}
         />
         <main className="flex-1 overflow-auto">
           {renderCurrentPage()}
